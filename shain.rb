@@ -6,6 +6,6 @@ class Shain
     puts '社員はとりあえず起立する。'
   end
   def kihonkyu
-    puts '基本給は#{@@kihonkyu}円です'
+    #計算を入れる
   end
 end
