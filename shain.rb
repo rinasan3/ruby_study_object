@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-# Shain class for lesson 3.3
+# Shain class for lesson 3.5
 class Shain
-  @@kihonkyu = 100;
   def standup
     puts '社員はとりあえず起立する。'
   end
-  def kihonkyu
-    #計算を入れる
+  def calculate_salary(kihonkyu)
+    # 給与計算の処理を入れる
   end
 end
