@@ -1,17 +1,13 @@
 # -*- coding: utf-8 -*-
-require_relative 'shain'
-require_relative 'tanto'
-require_relative 'shunin'
-require_relative 'bucho'
+require_relative './shain.rb'
 
-shain = Tanto.new
-shain.standup
-puts "私の給料は#{shain.calculate_salary(100)}円です"
+# Bucho class inherited from Shain class for lesson 3.5
+class Bucho < Shain
+  def standup
+    puts '部長がだるそうに立ちました。'
+  end
 
-shain = Shunin.new
-shain.standup
-puts "私の給料は#{shain.calculate_salary(100)}円です"
-
-shain = Bucho.new
-shain.standup
-puts "私の給料は#{shain.calculate_salary(100)}円です"
+  def calculate_salary(kihonkyu)
+    kihonkyu * 3
+  end
+end
